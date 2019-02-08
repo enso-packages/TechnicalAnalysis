@@ -1,14 +1,4 @@
-import Dataframes.Internal.CWrappers
-import Dataframes.Learn.SKLearnWrapper
-import Dataframes.Column
 import Dataframes.Table
-import Dataframes.Main
-import Dataframes.IO
-import Std.Base
-import Std.Foreign.C.Value
-import Std.Foreign
-
-import Dataframes.Plot.Matplotlib
 
 «28»def bollingerBands sum1:
     «2»stdDev = sum1 . eachTo "close_std_2" (_.at "Close_std dev" * 2.0)
